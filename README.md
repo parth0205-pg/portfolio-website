@@ -1,4 +1,4 @@
-# 👨‍💻 Personal Portfolio Website
+# Personal Portfolio Website
 
 [![Project Status](https://img.shields.io/badge/status-live-success?style=for-the-badge)](https://parth0205-pg.github.io/portfolio-website/)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
@@ -7,22 +7,22 @@ A fully responsive, professional portfolio website designed to showcase my acade
 
 The design features a custom **"Suit & Bronze" theme**, combining dark charcoal professional tones with warm wood/bronze accents for a modern, academic look.
 
-## 🚀 Live Demo
+## Live Demo
 **[Click here to view the live website](https://parth0205-pg.github.io/portfolio-website/)**
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-* **🎨 Custom Design:** "Suit & Wood" color theme (Charcoal Black, Cream White, Bronze Accents).
-* **📱 Fully Responsive:** optimizing layout for desktops, tablets, and mobile devices.
-* **⚡ Interactive UI:**
+* **Custom Design:** "Suit & Wood" color theme (Charcoal Black, Cream White, Bronze Accents).
+* **Fully Responsive:** optimizing layout for desktops, tablets, and mobile devices.
+* **Interactive UI:**
     * **Typing Animation** in the Hero section.
     * **Scroll Reveal** animations (elements fade in as you scroll).
     * **Hover Effects** on skill tags, buttons, and project cards.
-* **📧 Working Contact Form:** Integrated with **Web3Forms** to send emails directly without a backend server.
-* **📄 Resume Download:** One-click download button for the CV.
-* **🔗 Social Integration:** FontAwesome icons linking to LinkedIn, GitHub, and Email.
+* **Working Contact Form:** Integrated with **Web3Forms** to send emails directly without a backend server.
+* **Resume Download:** One-click download button for the CV.
+* **Social Integration:** FontAwesome icons linking to LinkedIn, GitHub, and Email.
 
 ---
 
@@ -34,7 +34,7 @@ The design features a custom **"Suit & Bronze" theme**, combining dark charcoal 
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 If you want to run this project locally on your machine:
 
@@ -52,7 +52,7 @@ If you want to run this project locally on your machine:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 ├── index.html       # Main HTML structure
