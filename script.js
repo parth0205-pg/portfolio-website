@@ -88,3 +88,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }());
 });
+
+// --- 4. Auto-Scroll Certificates ---
+    const slider = document.querySelector('.slider');
+    
+    if(slider) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        // Auto Scroll Function
+        const autoScroll = () => {
+            // If we are at the end, scroll back to start
+            if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                // Scroll to the next slide
+                slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
+            }
+        };
+
+        // Scroll every 3 seconds
+        let scrollInterval = setInterval(autoScroll, 3000);
+
+        // Pause auto-scroll when user touches/hovers
+        slider.addEventListener('mouseover', () => clearInterval(scrollInterval));
+        slider.addEventListener('touchstart', () => clearInterval(scrollInterval));
+
+        // Resume auto-scroll when user leaves
+        slider.addEventListener('mouseout', () => {
+            scrollInterval = setInterval(autoScroll, 3000);
+        });
+    }

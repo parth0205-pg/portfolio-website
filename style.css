@@ -194,6 +194,72 @@ body {
     color: #2c3e50;
 }
 
+/* Custom Education Section Background */
+#education {
+    /* Overlay + Your Image */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('college.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates a cool "Parallax" 3D scrolling effect */
+    color: white; /* Switches text to white so it's visible */
+}
+
+/* Force the text inside education cards to stay dark (since cards are white) */
+#education .card {
+    color: #333;
+}
+#education .card h3 {
+    color: #1a1a1a;
+}
+
+/* --- Certificate Slider Styling --- */
+.slider-container {
+    width: 100%;
+    max-width: 800px; /* Limits size so it doesn't get too huge */
+    margin: 0 auto;
+    overflow: hidden; /* Hides the scrollbar */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Forces the "snap" effect */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Hide scrollbar but keep functionality */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    flex: 0 0 100%; /* Shows one image at a time */
+    scroll-snap-align: center; /* Snaps image to center */
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Caption on bottom of certificate */
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Skills */
 .skills-wrapper {
     display: flex;
