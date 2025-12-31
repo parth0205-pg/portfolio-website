@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Pandya - Portfolio</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+    <div class="logo">Parth Pandya</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li> <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact & Feedback</a></li>
+    </ul>
+</nav>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="Me.jpg" alt="Parth Pandya" class="profile-pic">
+            </div>
+            <h1>Parth Pandya</h1>
+            <h2>I am a <span class="typing-text"></span></h2>
+            <a href="Resume.pdf" download class="btn-download">
+                Download Resume<i class="fa-solid fa-download"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="introduction" class="section-padding">
+        <h2 class="section-title">Introduction</h2>
+        <div class="content-box">
+            <p>Hello and welcome to my portfolio. I am a third-year Bachelor of Computer Applications (BCA) student at The Maharaja Sayajirao University of Baroda. With a strong foundation in Java and Web Development, I am passionate about bridging the gap between complex backend logic and intuitive user experiences.This website documents my academic journey, my technical projects, and my exploration into information security and entrepreneurship.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section-padding bg-light">
+        <h2 class="section-title">Education</h2>
+        <div class="card-container">
+            <div class="card hidden">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p><strong>University:</strong> The Maharaja Sayajirao University of Baroda</p>
+                <p><strong>Timeline:</strong> 2023 - 2027 (Expected)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding hidden">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrapper">
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Java, Python, SQL </li>
+                    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript </li>
+                    <li><strong>Concepts:</strong> Object-Oriented Programming (OOP), Data Structures</li>
+                    <li><strong>Tools:</strong> VS Code, Git/GitHub </li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Teamwork & Collaboration</li>
+                    <li>Public Speaking & Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section-padding hidden">
+        <h2 class="section-title">Certificates</h2>
+        <div class="card-container">
+            <div class="card hidden">
+                <h3>Volunteer Certificate</h3>
+                <p>Details about your volunteering experience...</p>
+            </div>
+            <div class="card hidden">
+                <h3>Illuminate Certificate</h3>
+                <p>Details about the Illuminate workshop...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding hidden">
+        <h2 class="section-title">Projects</h2>
+        <div class="card-container">
+            <div class="card hidden">
+                <h3>Quiz Game</h3>
+                <p>An interactive quiz application demonstrating logic and state management.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Personal Portfolio Website</h3>
+                <p>A personal website to showcase skills, resume, and projects (Currently viewing).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-padding bg-light">
+        <h2 class="section-title">Experience</h2>
+        <div class="content-box">
+            <p>Currently, I am looking for an internship as part of my college curriculum.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-dark">
+        <h2 class="section-title text-white">Contact & Feedback</h2>
+        
+        <div class="social-links">
+            <a href="mailto:pgpandya033@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+             <a href="https://www.linkedin.com/in/parth-pandya-0205th/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/parth0205-pg" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <form id="feedbackForm" class="feedback-form">
+            <input type="hidden" name="access_key" value="b81300b3-65c8-40d1-9529-71715082e4a3">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Id:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Parth Pandya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

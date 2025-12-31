@@ -1,0 +1,347 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, Geneva, Tahoma, sans-serif, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a; /* Suit Black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cd853f; /* Bronze/Wood hover */
+}
+
+/* Sections */
+.section-padding {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #f9f7f2; /* Cream/Paper white */
+}
+
+.bg-dark {
+    background-color: #1a1a1a; 
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #cd853f; /* Bronze underline */
+    display: inline-block;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    /* Gradient: Black -> Dark Coffee Brown */
+    background: linear-gradient(135deg, #000000, #3e2723); 
+    background-size: cover;
+    background-position: center;
+    /* Text Shadow for readability */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffdab9;
+}
+
+/* Resume Download Button */
+.btn-download {
+    display: inline-block; /* Allows width/padding to work on a link */
+    margin-top: 25px; /* Spacing from the text */
+    padding: 12px 30px; /* Big, clickable area */
+    background-color: #cd853f; /* Bronze Theme Color */
+    color: white;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 30px; /* Rounded pill shape looks modern */
+    border: 2px solid #cd853f;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.btn-download:hover {
+    background-color: transparent; /* Makes it see-through */
+    color: #cd853f; /* Text turns bronze */
+    border: 2px solid #cd853f; /* Border stays visible */
+    transform: translateY(-5px); /* Floats up slightly */
+    box-shadow: 0 5px 15px rgba(205, 133, 63, 0.4); /* Glow effect */
+}
+
+.typing-text {
+    color: #cd853f; /* Bronze color */
+    font-weight: bold;
+}
+.typing-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+/* Content Box (Introduction & Experience) */
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+
+/* Cards (Education, Projects, Certificates) */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #cd853f;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Skills */
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-category {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #cd853f;
+    padding-bottom: 5px;
+}
+
+/* Change the list to a Flex container */
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Style the individual tags */
+.skills-category li {
+    background-color: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: background 0.3s, color 0.3s;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Add a hover effect to skills */
+.skills-category li:hover {
+    background-color: #cd853f;
+    color: white;
+    transform: scale(1.05);
+    cursor: default;
+}
+
+/* Contact Form */
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Color */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #cd853f; /* Bronze */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #a0522d; /* Darker Bronze */
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 20px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #cd853f; 
+    transform: translateY(-5px); 
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
