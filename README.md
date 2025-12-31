@@ -1,6 +1,6 @@
 # 👨‍💻 Personal Portfolio Website
 
-![Project Status](https://img.shields.io/badge/status-live-success?style=for-the-badge)
+[![Project Status](https://img.shields.io/badge/status-live-success?style=for-the-badge)](https://parth0205-pg.github.io/portfolio-website/)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
 A fully responsive, professional portfolio website designed to showcase my academic journey, technical skills, and projects as a Full Stack Development Intern Candidate.
@@ -40,7 +40,7 @@ If you want to run this project locally on your machine:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [git clone https://github.com/parth0205-pg/portfolio-website.git](https://github.com/parth0205-pg/portfolio-website.git)
     ```
 2.  **Navigate to the project folder**
     ```bash
