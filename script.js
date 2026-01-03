@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (form) {
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevents the page from reloading
+            e.preventDefault();
 
             // Get form data
             const formData = new FormData(form);
@@ -39,22 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(async (response) => {
                 let json = await response.json();
                 if (response.status == 200) {
-                    // SUCCESS!
+
                     alert(`Thank you! Your feedback has been sent successfully.`);
-                    form.reset(); // Clear the form inputs
+                    form.reset();
                 } else {
-                    // ERROR from Web3Forms
+
                     console.log(response);
                     alert("Something went wrong. Please try again.");
                 }
             })
             .catch(error => {
-                // Network ERROR
+
                 console.log(error);
                 alert("Something went wrong with the internet connection.");
             })
             .finally(() => {
-                // Reset button text back to normal
+
                 submitButton.innerText = originalText;
             });
         });
@@ -82,9 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (letter.length === currentText.length) {
             count++;
             index = 0;
-            setTimeout(type, 2000); /* Wait 2 seconds before next word */
+            setTimeout(type, 2000);
         } else {
-            setTimeout(type, 100); /* Typing speed */
+            setTimeout(type, 100);
         }
     }());
 });
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Auto Scroll Function
         const autoScroll = () => {
-            // If we are at the end, scroll back to start
+
             if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
                 slider.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
@@ -108,14 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Scroll every 3 seconds
+
         let scrollInterval = setInterval(autoScroll, 3000);
 
-        // Pause auto-scroll when user touches/hovers
+        
         slider.addEventListener('mouseover', () => clearInterval(scrollInterval));
         slider.addEventListener('touchstart', () => clearInterval(scrollInterval));
 
-        // Resume auto-scroll when user leaves
+        
         slider.addEventListener('mouseout', () => {
             scrollInterval = setInterval(autoScroll, 3000);
         });
