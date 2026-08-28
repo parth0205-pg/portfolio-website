@@ -197,7 +197,7 @@ body {
 /* Custom Education Section Background */
 #education {
     /* Overlay + Image */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('college.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/college.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
